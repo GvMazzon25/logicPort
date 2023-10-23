@@ -2,9 +2,11 @@ from porte_logiche import porta_not
 
 
 def main():
-    x = input('Inserisci primo numero binario: ')
+    x = input('Inserisci un numero binario (0 o 1): ')
     result = porta_not(x)
-    print(result)
+    if result is not None:
+        print(f"NOT di {x} è {result}")
 
 
-main()
+if __name__ == "__main__":
+    main()
